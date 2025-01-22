@@ -159,7 +159,7 @@ const convertTemperature = (degrees, scale) => {
     return `${cenToF()}` + "(Fahrenheit)";
   } else if (scale === "F") {
     const fahrToC = () => ((degrees - 32) * 5) / 9;
-    return `${fahrToC}` + "(Celsius)";
+    return `${fahrToC()}` + "(Celsius)";
   }
 };
 
