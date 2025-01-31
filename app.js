@@ -53,7 +53,7 @@ Complete the exercise in the space below:
 */
 
 const isCharAVowel = (char) => {
-  if (char === "a" || "e" || "i" || "o" || "u") {
+  if (char === "a" || char === "e" || char === "i" || char === "o" || char === "u") {
     return true;
   } else {
     return false;
@@ -261,11 +261,7 @@ Complete the exercise in the space below:
 */
 
 const numArgs = (...args) => {
-  let count = 0;
-  for (let i = 0; i < args.length; i++) {
-    count++;
-  }
-  return count;
+  return args.length;
 };
 
 console.log("Exercise 12 Result:", numArgs(1, 2, 3, 4));
